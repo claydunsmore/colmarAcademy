@@ -1,0 +1,347 @@
+
+header {
+  position: fixed;
+  top: -3px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 64px;
+  background-color: #fff;
+  z-index: 999;
+}
+
+.startLearning {
+  background-color: #ededed;
+}
+
+h1, h2 {
+  margin: 0;
+  line-height: 1.5;
+  font-family: 'Secular One', sans-serif;
+}
+ul {
+  width: 100%;
+}
+
+p, a, li, button {
+  margin: 0;
+  font-family: 'Secular One', sans-serif;
+  line-height: 1.5;
+  font-weight: 200;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logoTitle {
+  display: none;
+}
+
+.deskLinkContainer{
+  display: none;
+}
+
+.navDesk {
+  display: none;
+}
+
+.practiceImg, .practiceTitle, .practiceContent, .practiceContributor, .keepPracticing {
+  display: none;
+}
+
+.logo, .onCampus, .online, .login {
+  height: 2rem;
+  width: 2rem;
+}
+
+.jumboImg, .orientationImg, .campusImg {
+  max-width: 100%;
+}
+
+.desktopOptionsContainer {
+  display: none;
+}
+
+.mobileOptionsContainer {
+  display: flex;
+}
+
+.orientationContainer, .campusContainer, .guestContainer, .optionsContainer, .videoContainer, footer {
+  background-color: #ededed;
+}
+
+.orientationImgDesk, .campusImgDesk, .guestImgDesk {
+  display: none;
+}
+
+.orientationImg, .campusImg, .guestImg {
+  width: 91%;
+  margin: 16px;
+}
+
+.campusImg {
+  margin: 64px 0 0 16px;
+}
+
+.learnSomethingContainer {
+  padding: 32px 16px;
+  background-color: #c4c4c4;
+}
+
+.mainTitle {
+  margin: 0 0 32px 0;
+}
+
+.titleContent {
+  margin: 0 0 24px 0;
+}
+
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  width: 90%;
+  text-align: center;
+  background-color: #888;
+  color: #fff;
+  padding: 1rem;
+}
+
+.subTitle {
+  margin: 0 16px 0 32px;
+}
+
+.startLearning {
+  text-align: center;
+  padding: 32px 0;
+}
+
+ul {
+  padding: 1rem;
+}
+
+li {
+  list-style-type: none;
+  padding: 16px;
+  margin: 0 auto 8px;
+  background-color: #d9d9d9;
+}
+
+video {
+  padding: 0 0 24px 0;
+  max-width: 100%;
+}
+
+.reimagineUrban, .urbanContent {
+  display: none;
+}
+
+.fismaNowAndThenContainer {
+  display: none;
+}
+
+.copyright {
+  padding: 16px;
+}
+
+@media screen and (min-width: 1020px) {
+
+    header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .siteContainer {
+      position: relative;
+      top: 3rem;
+    }
+
+    .logoContainer {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .logo {
+      position: relative;
+      top: .5rem;
+
+    }
+
+    .logoTitle {
+      display: inline-flex;
+    }
+
+    .deskLinkContainer {
+      display: inline-flex;
+    }
+
+    .navOnCampusDesk, .navOnlineDesk, .companyDesk {
+      margin: 0 16px 0 0;
+    }
+
+    .navLoginDesk {
+      margin: 0 24px 0 0;
+    }
+
+   .iconOncampusLink, .iconOnlineLink, .iconLoginLink {
+     display: none;
+   }
+
+   .jumboLearnContainer {
+     display: flex;
+     flex-direction: row;
+     background-color: #888;
+     padding: 32px 24px;
+   }
+
+   .learnSomethingContainer {
+     width: 70%;
+   }
+
+   .practiceImg, .practiceTitle, .practiceContent, .practiceContributor, .keepPracticing {
+     display: block;
+   }
+
+   .keepPracticing {
+     margin: 32px 24px;
+     width: 60%;
+   }
+
+   .practiceImg, .practiceTitle, .practiceContent, .practiceContributor {
+     width: 100%;
+   }
+
+   .keepPracticingAndSubTitles {
+     display: flex;
+     flex-direction: row;
+     background-color: #ededed;
+   }
+
+   .detailsContainer {
+     display: flex;
+     flex-direction: column;
+     width: 40%;
+   }
+
+   .orientationImg, .campusImg, .guestImg {
+     display: none;
+   }
+
+   .orientationContainer, .campusContainer, .guestContainer {
+     display: flex;
+     flex-direction: row;
+   }
+
+   .orientationImgDesk, .campusImgDesk, .guestImgDesk {
+     display: inline-flex;
+     width: 35%;
+     height: 35%;
+     margin: 16px;
+   }
+
+   .orientationContentContainer, .campusContentContainer, .guestContentContainer {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     width: 65%;
+   }
+
+    ul {
+     display: none;
+   }
+
+   .desktopOptionsContainer {
+     display: flex;
+     flex-direction: column;
+   }
+
+   .rowOneCardsContainer, .rowTwoCardsContainer {
+     display: flex;
+     flex-direction: row;
+     width: 100%;
+     margin: 0 72px;
+   }
+
+   .cardSoftware, .cardComputerArt, .cardDesign, .cardData, .cardBusiness, .cardMarketing {
+     width: 25%;
+   }
+
+   .cardSoftware, .cardComputerArt {
+     margin: 0 32px 32px 0;
+   }
+
+   .cardDesign {
+     margin: 0 0 32px 0;
+   }
+
+   .cardData, .cardBusiness {
+     margin: 0 32px 0 0;
+   }
+
+   .softwareImg, .computerArtImg, .designImg, .dataImg, .businessImg, .marketingImg {
+     max-width: 100%;
+   }
+
+   .videoFismaNowAndThenContainer {
+     display: flex;
+     flex-direction: row;
+   }
+
+   .videoContainer {
+     display: flex;
+     flex-direction: column;
+   }
+
+   video {
+     max-width: 90%;
+     margin: 0 24px 24px 24px;
+   }
+
+   .reimagineUrban, .urbanContent {
+     max-width: 90%;
+     display: inline-flex;
+   }
+
+   .reimagineUrban {
+     margin: 0 0 8px 24px;
+   }
+
+   .urbanContent {
+     margin: 0 0 32px 24px;
+   }
+
+   .fismaNowAndThenContainer {
+     display: inline-block;
+     width: 120%;
+     background-color: #ededed;
+   }
+
+   .nowAndThen, .fisma {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     background-color: #ededed;
+   }
+
+   .fismaImg, .nowAndThenImg {
+     width: 35%;
+   }
+
+   .fixmaContentContainer, .nowAndThenContentContainer {
+     margin: 0 auto;
+   }
+
+   .fixmaContentContainer {
+     width: 47%;
+   }
+
+   .copyright {
+     margin: 16px 0 0 24px;
+   }
+
+
+}
