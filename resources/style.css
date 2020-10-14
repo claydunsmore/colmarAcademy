@@ -1,54 +1,52 @@
+:root {
+  --none: none;
+  --grey: #ededed;
+  --zero: 0;
+  --oneFive: 1.5rem;
+  --defaultFont: 'Secular One', sans-serif;
+  --hundred: 100%;
+  --center: center;
+  --flex: flex;
+  --row: row;
+  --block: block;
+}
 
 header {
   position: fixed;
   top: -3px;
-  width: 100%;
-  display: flex;
-  align-items: center;
+  width: var(--hundred);
+  display: var(--flex);
+  align-items: var(--center);
   justify-content: space-around;
   height: 64px;
   background-color: #fff;
   z-index: 999;
 }
 
-.startLearning {
-  background-color: #ededed;
-}
-
-h1, h2 {
-  margin: 0;
-  line-height: 1.5;
-  font-family: 'Secular One', sans-serif;
-}
 ul {
-  width: 100%;
+  width: var(--hundred);
 }
 
 p, a, li, button {
-  margin: 0;
-  font-family: 'Secular One', sans-serif;
-  line-height: 1.5;
   font-weight: 200;
 }
 
 a {
-  text-decoration: none;
+  text-decoration: var(--none);
 }
 
-.logoTitle {
-  display: none;
+p, a, li, button, h1, h2 {
+  margin: var(--zero);
+  line-height: var(--oneFive);
+  font-family: var(--defaultFont);
 }
 
-.deskLinkContainer{
-  display: none;
+.fismaNowAndThenContainer, .reimagineUrban, .urbanContent, .orientationImgDesk, .campusImgDesk, .guestImgDesk, .desktopOptionsContainer, .logoTitle, .deskLinkContainer, .navDesk, .practiceImg, .practiceTitle, .practiceContent, .practiceContributor, .keepPracticing {
+  display: var(--none);
 }
 
-.navDesk {
-  display: none;
-}
-
-.practiceImg, .practiceTitle, .practiceContent, .practiceContributor, .keepPracticing {
-  display: none;
+.startLearning, .orientationContainer, .campusContainer, .guestContainer, .optionsContainer, .videoContainer, footer {
+  background-color: var(--grey);
 }
 
 .logo, .onCampus, .online, .login {
@@ -57,23 +55,11 @@ a {
 }
 
 .jumboImg, .orientationImg, .campusImg {
-  max-width: 100%;
-}
-
-.desktopOptionsContainer {
-  display: none;
+  max-width: var(--hundred);
 }
 
 .mobileOptionsContainer {
-  display: flex;
-}
-
-.orientationContainer, .campusContainer, .guestContainer, .optionsContainer, .videoContainer, footer {
-  background-color: #ededed;
-}
-
-.orientationImgDesk, .campusImgDesk, .guestImgDesk {
-  display: none;
+  display: var(--flex);
 }
 
 .orientationImg, .campusImg, .guestImg {
@@ -99,13 +85,13 @@ a {
 }
 
 .buttonWrapper {
-  display: flex;
-  justify-content: center;
+  display: var(--flex);
+  justify-content: var(--center);
 }
 
 button {
   width: 90%;
-  text-align: center;
+  text-align: var(--center);
   background-color: #888;
   color: #fff;
   padding: 1rem;
@@ -116,7 +102,7 @@ button {
 }
 
 .startLearning {
-  text-align: center;
+  text-align: var(--center);
   padding: 32px 0;
 }
 
@@ -133,15 +119,7 @@ li {
 
 video {
   padding: 0 0 24px 0;
-  max-width: 100%;
-}
-
-.reimagineUrban, .urbanContent {
-  display: none;
-}
-
-.fismaNowAndThenContainer {
-  display: none;
+  max-width: var(--hundred);
 }
 
 .copyright {
@@ -151,7 +129,7 @@ video {
 @media screen and (min-width: 1020px) {
 
     header {
-      display: flex;
+      display: var(--flex);
       justify-content: space-between;
     }
 
@@ -161,8 +139,8 @@ video {
     }
 
     .logoContainer {
-      display: flex;
-      flex-direction: row;
+      display: var(--flex);
+      flex-direction: var(--row);
     }
 
     .logo {
@@ -171,11 +149,7 @@ video {
 
     }
 
-    .logoTitle {
-      display: inline-flex;
-    }
-
-    .deskLinkContainer {
+    .logoTitle, deskLinkContainer {
       display: inline-flex;
     }
 
@@ -188,12 +162,12 @@ video {
     }
 
    .iconOncampusLink, .iconOnlineLink, .iconLoginLink {
-     display: none;
+     display: var(--none);
    }
 
    .jumboLearnContainer {
-     display: flex;
-     flex-direction: row;
+     display: var(--flex);
+     flex-direction: var(--row);
      background-color: #888;
      padding: 32px 24px;
    }
@@ -203,7 +177,7 @@ video {
    }
 
    .practiceImg, .practiceTitle, .practiceContent, .practiceContributor, .keepPracticing {
-     display: block;
+     display: var(--block);
    }
 
    .keepPracticing {
@@ -212,28 +186,28 @@ video {
    }
 
    .practiceImg, .practiceTitle, .practiceContent, .practiceContributor {
-     width: 100%;
+     width: var(--hundred);
    }
 
    .keepPracticingAndSubTitles {
-     display: flex;
-     flex-direction: row;
-     background-color: #ededed;
+     display: var(--flex);
+     flex-direction: var(--row);
+     background-color: var(--grey);
    }
 
    .detailsContainer {
-     display: flex;
+     display: var(--flex);
      flex-direction: column;
      width: 40%;
    }
 
    .orientationImg, .campusImg, .guestImg {
-     display: none;
+     display: var(--none);
    }
 
    .orientationContainer, .campusContainer, .guestContainer {
-     display: flex;
-     flex-direction: row;
+     display: var(--flex);
+     flex-direction: var(--row);
    }
 
    .orientationImgDesk, .campusImgDesk, .guestImgDesk {
@@ -244,25 +218,25 @@ video {
    }
 
    .orientationContentContainer, .campusContentContainer, .guestContentContainer {
-     display: flex;
+     display: var(--flex);
      flex-direction: column;
-     justify-content: center;
+     justify-content: var(--center);
      width: 65%;
    }
 
     ul {
-     display: none;
+     display: var(--none);
    }
 
    .desktopOptionsContainer {
-     display: flex;
+     display: var(--flex);
      flex-direction: column;
    }
 
    .rowOneCardsContainer, .rowTwoCardsContainer {
-     display: flex;
-     flex-direction: row;
-     width: 100%;
+     display: var(--flex);
+     flex-direction: var(--row);
+     width: var(--hundred);
      margin: 0 72px;
    }
 
@@ -283,16 +257,16 @@ video {
    }
 
    .softwareImg, .computerArtImg, .designImg, .dataImg, .businessImg, .marketingImg {
-     max-width: 100%;
+     max-width: var(--hundred);
    }
 
    .videoFismaNowAndThenContainer {
-     display: flex;
-     flex-direction: row;
+     display: var(--flex);
+     flex-direction: var(--row);
    }
 
    .videoContainer {
-     display: flex;
+     display: var(--flex);
      flex-direction: column;
    }
 
@@ -317,14 +291,14 @@ video {
    .fismaNowAndThenContainer {
      display: inline-block;
      width: 120%;
-     background-color: #ededed;
+     background-color: var(--grey);
    }
 
    .nowAndThen, .fisma {
-     display: flex;
-     flex-direction: row;
-     align-items: center;
-     background-color: #ededed;
+     display: var(--flex);
+     flex-direction: var(--row);
+     align-items: var(--center);
+     background-color: var(--grey);
    }
 
    .fismaImg, .nowAndThenImg {
