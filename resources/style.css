@@ -9,6 +9,7 @@
   --flex: flex;
   --row: row;
   --block: block;
+  --inlineFlex: inline-flex;
 }
 
 header {
@@ -211,7 +212,7 @@ video {
    }
 
    .orientationImgDesk, .campusImgDesk, .guestImgDesk {
-     display: inline-flex;
+     display: var(--inlineFlex);
      width: 35%;
      height: 35%;
      margin: 16px;
@@ -277,7 +278,7 @@ video {
 
    .reimagineUrban, .urbanContent {
      max-width: 90%;
-     display: inline-flex;
+     display: var(--inlineFlex);
    }
 
    .reimagineUrban {
